@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="form-group mb-2">
+   <center>
+     <form method="post" action="/register">
+          Id <input type="text" name="id"><br><br>
+          Name <input type="text" name="name"><br><br>
+          Email <input type="email" name="email"><br><br>
+          Password <input type="password" name="password"><br><br>
+          Mobile No. <input type="text" name="mno"><br><br>
+          <input type="submit" value="submit" class="btn btn-success"><br><br>
+          Already have an account?<a href="/login">Login</a>
+     </form>
+   </center>
+   </div>
+{% endblock %}

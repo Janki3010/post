@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form-group mb-2">
+   <center>
+       <form method="post">
+            Title <input type="text" name="title" value="{{ title }}"><br><br>
+            Content <input type="text" name="content" value="{{ content }}"><br><br>
+           <input type="submit"  class="btn btn-success">
+           <a href="/dashboard" class="btn btn-outline-info">See Your Post</a>
+       </form>
+   </center>
+</div>
+
+{% endblock %}
